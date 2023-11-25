@@ -24,6 +24,6 @@ jobs:
       with:
         context: "{{defaultContext}}:express-app"
         push: true
-        tags: express-app:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/express-app:latest
 
     
